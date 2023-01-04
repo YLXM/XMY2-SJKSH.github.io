@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>第三部分</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="js/echarts.js"></script>\
+    <script type="text/javascript" src="js/echarts-wordcloud.min.js"></script>
+    <script src="js/yxb.js"></script>
+    <script src="js/ds.js"></script>
+    <script src="js/su.js"></script>
+  </head>
+  <body>
+    <div id="chart3">
+        <div id="chart3-1" style="width: 1680px; height: 800px"></div>
+<script>
+        var data = {
+            value0: [{
+                "name": "王绩",
+                "value": 128
+            },
+                {
+                    "name": "沈佺期",
+                    "value": 182
+                },
+                {
+                    "name": "宋之问",
+                    "value": 130
+                },
+                {
+                    "name": "陈子昂",
+                    "value": 825
+                },
+                {
+                    "name": "张九龄",
+                    "value": 223
+                },
+                {
+                    "name": "王翰",
+                    "value": 19
+                },
+                {
+                    "name": "孟浩然",
+                    "value": 274
+                },
+                {
+                    "name": "李颀",
+                    "value": 133
+                },
+                {
+                    "name": "王昌龄",
+                    "value": 222
+                },
+                {
+                    "name": "寒山",
+                    "value": 314
+                },
+                {
+                    "name": "李白",
+                    "value": 1206
+                },
+                {
+                    "name": "王维",
+                    "value": 402
+                },
+                {
+                    "name": "高适",
+                    "value": 268
+                },
+                {
+                    "name": "储光羲",
+                    "value": 232
+                },
+                {
+                    "name": "刘长卿",
+                    "value": 529
+                },
+                {
+                    "name": "杜甫",
+                    "value": 1489
+                },
+                {
+                    "name": "刘慎虚",
+                    "value": 16
+                },
+                {
+                    "name": "岑参",
+                    "value": 411
+                },
+                {
+                    "name": "贾至",
+                    "value": 48
+                },
+                {
+                    "name": "钱起",
+                    "value": 541
+                },
+                {
+                    "name": "常建",
+                    "value": 59
+                },
+                {
+                    "name": "韦应物",
+                    "value": 586
+                },
+                {
+                    "name": "孟郊",
+                    "value": 532
+                },
+                {
+                    "name": "权德舆",
+                    "value": 351
+                },
+                {
+                    "name": "韩愈",
+                    "value": 438
+                },
+                {
+                    "name": "白居易",
+                    "value": 3009
+                },
+                {
+                    "name": "柳宗元",
+                    "value": 202
+                },
+                {
+                    "name": "贾岛",
+                    "value": 421
+                },
+                {
+                    "name": "李贺",
+                    "value": 294
+                },
+                {
+                    "name": "卢仝",
+                    "value": 111
+                },
+                {
+                    "name": "杜牧",
+                    "value": 544
+                },
+                {
+                    "name": "李涉",
+                    "value": 136
+                },
+                {
+                    "name": "李群玉",
+                    "value": 268
+                },
+                {
+                    "name": "李商隐",
+                    "value": 616
+                },
+
+            ],
+            value1:[
+              {
+                "name": "王绩",
+                "value": 128
+              },
+              {
+                    "name": "沈佺期",
+                    "value": 182
+                },
+                {
+                    "name": "宋之问",
+                    "value": 130
+                },
+                {
+                    "name": "陈子昂",
+                    "value": 825
+                },
+                {
+                    "name": "张九龄",
+                    "value": 223
+                },
+            ],
+            value2:[
+            {
+                    "name": "王翰",
+                    "value": 19
+                },
+                {
+                    "name": "孟浩然",
+                    "value": 274
+                },
+                {
+                    "name": "李颀",
+                    "value": 133
+                },
+                {
+                    "name": "王昌龄",
+                    "value": 222
+                },
+                {
+                    "name": "寒山",
+                    "value": 314
+                },
+                {
+                    "name": "李白",
+                    "value": 1206
+                },
+                {
+                    "name": "王维",
+                    "value": 402
+                },
+                {
+                    "name": "高适",
+                    "value": 268
+                },
+                {
+                    "name": "储光羲",
+                    "value": 232
+                },
+                {
+                    "name": "刘长卿",
+                    "value": 529
+                },
+                {
+                    "name": "杜甫",
+                    "value": 1489
+                },
+                {
+                    "name": "刘慎虚",
+                    "value": 16
+                },
+                {
+                    "name": "岑参",
+                    "value": 411
+                },
+                {
+                    "name": "贾至",
+                    "value": 48
+                },
+                {
+                    "name": "常建",
+                    "value": 59
+                },
+            ],
+            value3:[
+            {
+                    "name": "钱起",
+                    "value": 541
+                },
+                {
+                    "name": "韦应物",
+                    "value": 586
+                },
+                {
+                    "name": "孟郊",
+                    "value": 532
+                },
+                {
+                    "name": "权德舆",
+                    "value": 351
+                },
+                {
+                    "name": "白居易",
+                    "value": 3009
+                },
+                {
+                    "name": "柳宗元",
+                    "value": 202
+                },
+                {
+                    "name": "卢仝",
+                    "value": 111
+                },
+                {
+                    "name": "李涉",
+                    "value": 136
+                },
+            ],
+            value4:[
+            {
+                    "name": "韩愈",
+                    "value": 438
+                },
+                {
+                    "name": "贾岛",
+                    "value": 421
+                },
+                {
+                    "name": "李贺",
+                    "value": 294
+                },
+                {
+                    "name": "杜牧",
+                    "value": 544
+                },
+                {
+                    "name": "李群玉",
+                    "value": 268
+                },
+                {
+                    "name": "李商隐",
+                    "value": 616
+                },
+            ],
+          }
+        var myChart6 = echarts.init(document.getElementById('chart3-1'),'ds');
+            var option6={
+                tooltip: {
+                    show:true,                       
+                },
+                series: [{
+               type: 'wordCloud',
+               sizeRange: [40, 200],
+               rotationRange: [0, 0],
+               rotationStep: 45,
+               gridSize: 8,
+               shape: 'pentagon',
+               width: '100%',
+               height: '100%',
+               textStyle: {
+                   normal: {
+                       color: function () {
+                           return 'rgb(' + [
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160)
+                           ].join(',') + ')';
+                       }
+                   }
+               },
+               data: data.value0,
+           }]
+            }
+            var option7={
+                tooltip: {
+                    show:true,                             
+                },
+                series: [{
+               type: 'wordCloud',
+               sizeRange: [40, 200],
+               rotationRange: [0, 0],
+               rotationStep: 45,
+               gridSize: 8,
+               shape: 'pentagon',
+               width: '100%',
+               height: '100%',
+               textStyle: {
+                   normal: {
+                       color: function () {
+                           return 'rgb(' + [
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160)
+                           ].join(',') + ')';
+                       }
+                   }
+               },
+               data: data.value1,
+           }]
+            }
+            var option8={
+                tooltip: {
+                    show:true,                             
+                },
+                series: [{
+               type: 'wordCloud',
+               sizeRange: [40, 200],
+               rotationRange: [0, 0],
+               rotationStep: 45,
+               gridSize: 8,
+               shape: 'pentagon',
+               width: '100%',
+               height: '100%',
+               textStyle: {
+                   normal: {
+                       color: function () {
+                           return 'rgb(' + [
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160)
+                           ].join(',') + ')';
+                       }
+                   }
+               },
+               data: data.value2,
+           }]
+            }
+            var option9={
+                tooltip: {
+                    show:true,                             
+                },
+                series: [{
+               type: 'wordCloud',
+               sizeRange: [40, 200],
+               rotationRange: [0, 0],
+               rotationStep: 45,
+               gridSize: 8,
+               shape: 'pentagon',
+               width: '100%',
+               height: '100%',
+               textStyle: {
+                   normal: {
+                       color: function () {
+                           return 'rgb(' + [
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160)
+                           ].join(',') + ')';
+                       }
+                   }
+               },
+               data: data.value3,
+           }]
+            }
+            var option10={
+                tooltip: {
+                    show:true,                             
+                },
+                series: [{
+               type: 'wordCloud',
+               sizeRange: [40, 200],
+               rotationRange: [0, 0],
+               rotationStep: 45,
+               gridSize: 8,
+               shape: 'pentagon',
+               width: '100%',
+               height: '100%',
+               textStyle: {
+                   normal: {
+                       color: function () {
+                           return 'rgb(' + [
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160),
+                               Math.round(Math.random() * 160)
+                           ].join(',') + ')';
+                       }
+                   }
+               },
+               data: data.value4,
+           }]
+            }
+            myChart6.setOption(option6,true);
+            function getnum(){
+             var val="";
+             var radio=document.getElementsByName("gender");
+             for(var i=0;i<radio.length;i++){
+               if(radio[i].checked==true){
+               val=radio[i].value;
+               break;
+             }
+          }
+          if(val==0)
+          {
+            myChart6.setOption(option6)
+          }
+          if(val==1){
+            myChart6.setOption(option7)
+          }
+          if(val==2){
+            myChart6.setOption(option8)
+          }
+          if(val==3){
+            myChart6.setOption(option9)
+          }
+          if(val==4){
+            myChart6.setOption(option10)
+          }
+         }
+         myChart6.on('click',function(param){
+              const idx1=param.series.data;
+              if(idx==1){
+                document.write("<img src='../img/poem/1李白.png' height='200px' />");
+              }
+            }
+            )
+</script>
+<form >
+  <input type="radio" value="0" checked="checked" name="gender" onclick="getnum()" style="width: 24px; height: 24px; margin: 10px; vertical-align:middle;">全部
+  <input type="radio" value="1" name="gender" onclick="getnum()" style="width: 24px; height: 24px;  margin: 10px; vertical-align:middle;">初唐时期
+  <input type="radio" value="2" name="gender" onclick="getnum()" style="width: 24px; height: 24px;  margin: 10px; vertical-align:middle;">盛唐时期
+  <input type="radio" value="3" name="gender" onclick="getnum()" style="width: 24px; height: 24px;  margin: 10px; vertical-align:middle;">中唐时期
+  <input type="radio" value="4" name="gender" onclick="getnum()" style="width: 24px; height: 24px;  margin: 10px; vertical-align:middle;">晚唐时期
+</form>
+      </div>
+  </body>
+</html>

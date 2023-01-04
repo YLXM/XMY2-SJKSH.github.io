@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>第一部分</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="js/echarts.js"></script>
+    <script src="js/tangshi.js"></script>
+  </head>
+  <body>
+    <div id="chart1">
+        <div id="body2-2" style="width:1680px;height:150px; float:left" ></div>
+         <div id="body2-1" style="width: 1680px;height:800px; float:left;" ></div>
+         <div id="body2-0" style="width: 1680px;height:800px; float:left" ></div>
+         <script type="text/javascript">
+           var myChart = echarts.init(document.getElementById('body2-0'), 'tangshi');
+           var myChart1 = echarts.init(document.getElementById('body2-1'), 'tangshi');
+           var myChart2 = echarts.init(document.getElementById('body2-2'), 'tangshi');
+           var option = {
+     title: {
+      text: '五言律诗总计',
+      left:'center'
+    },
+     tooltip: {
+     trigger: 'axis',
+    axisPointer: {
+    type: 'shadow'
+  }
+},
+   grid: {
+   left: '3%',
+   right: '4%',
+   bottom: '10%',
+   containLabel: true,
+   
+},
+xAxis: {
+  type: 'value',
+  boundaryGap: [0, 0.01]
+},
+yAxis: {
+  type: 'category',
+  data: ['首句仄起入仄韵式', '首句仄起不入平韵式', '首句仄起入平韵式', '首句平起不入仄韵式', '首句平起入仄韵式', '首句平起不入平韵式','首句平起入平韵式','首句仄起不入仄韵式','首句仄起入仄韵式']
+},
+series: [
+  {
+    name: '五言律诗',
+    type: 'bar',
+    data: [67, 5528, 1610, 48, 130, 3198,738,83,70]
+  },
+  
+]
+};
+           var option1 = {
+      title: {
+      text: '七言绝句总计',
+      left:'center'
+    },
+     tooltip: {
+     trigger: 'axis',
+    axisPointer: {
+    type: 'shadow'
+  }
+},
+   grid: {
+   left: '3%',
+   right: '4%',
+   bottom: '3%',
+   containLabel: true,
+   selectedMode:false,
+},
+xAxis: {
+  type: 'value',
+  boundaryGap: [0, 0.01]
+},
+yAxis: {
+  type: 'category',
+  data: ['首句平起入平韵式', '首句平起不入平韵式', '首句仄起入平韵式', '首句仄起不入平韵式', '仄韵七绝二式 平起式', '仄韵七绝二式 仄起式','首句平起入平韵式','首句平起不入平韵式','首句仄起入平韵式','首句仄起不入平韵式']
+},
+series: [
+  {
+    name: '七言绝句',
+    type: 'bar',
+    data: [2566, 848, 3586, 706, 59, 73,2574,504,2489,354]
+  },
+]
+};
+           var option2 = {
+      title: {
+      text: '七言律诗总计',
+      left:'center'
+    },
+     tooltip: {
+     trigger: 'axis',
+    axisPointer: {
+    type: 'shadow'
+  }
+},
+   grid: {
+   left: '3%',
+   right: '4%',
+   bottom: '3%',
+   containLabel: true,
+   selectedMode:false,
+},
+xAxis: {
+  type: 'value',
+  boundaryGap: [0, 0.01]
+},
+yAxis: {
+  type: 'category',
+  data: ['七律仄韵二式 平起式', '七律仄韵二式  仄起式']
+},
+series: [
+  {
+    name: '七言律诗',
+    type: 'bar',
+    data: [13, 4]
+  },
+]
+};
+           var option3 = {
+tooltip: {
+  trigger: 'item'
+},
+legend: {
+  top: '5%',
+  left: 'center'
+},
+series: [
+  {
+    name: '分类',
+    type: 'pie',
+    radius: ['40%', '70%'],
+    avoidLabelOverlap: false,
+    itemStyle: {
+      borderRadius: 10,
+      borderColor: '#fff',
+      borderWidth: 2
+    },
+    label: {
+      show: false,
+      position: 'center'
+    },
+    emphasis: {
+      label: {
+        show: true,
+        fontSize: '25',
+        fontWeight: 'bold',
+        color:'#5B7266'
+      }
+    },
+    labelLine: {
+      show: false
+    },
+    data: [
+      { value: 49, name: '五言律诗' },
+      { value: 49, name: '七言绝句' },
+      { value: 2, name: '七言律诗' },
+    ]
+  }
+]
+};
+    myChart.setOption(option);
+    myChart1.setOption(option3);
+    myChart1.on('click',function(params){
+      const idx=params.dataIndex;
+      if(idx==0){
+        myChart.setOption(option);
+      }
+      if(idx==1){
+        myChart.setOption(option1);
+      }
+      if(idx==2){
+        myChart.setOption(option2);
+      }
+    })
+  </script>
+        
+      </div>
+  </body>
+</html>

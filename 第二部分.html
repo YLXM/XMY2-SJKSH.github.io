@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>第二部分</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="js/echarts.js"></script>
+    <script src="js/yxb.js"></script>
+  </head>
+  <body>
+    <div id="chart2">
+        <div id="chart2-1" style="width: 1680px;height:1500px; float:right"></div>
+<script type="text/javascript">
+  var myChart4 = echarts.init(document.getElementById('chart2-1'), 'yxb');
+  var option13;
+  var option14;
+  var option15;
+  option13 = {
+    title: {
+      show:false,
+text: '唐朝唐诗分类',
+subtext: '其他部分',
+left: 'center',
+textStyle: {
+  fontSize: 50
+},
+subtextStyle: {
+  fontSize: 30
+}
+},
+tooltip: {
+trigger: 'item',
+formatter: '{a} <br/>{b}: {c} ({d}%)'
+},
+legend: {
+show:false,
+top:'bottom',
+data: [
+  '上平声',
+  '下平声',
+  '上声',
+  '入声',
+  '去声',
+]
+},
+series: [
+{
+  name: '唐诗',
+  type: 'pie',
+  selectedMode: 'single',
+  radius: [60, '30%'],
+  label: {
+    position: 'inner',
+    fontSize: 14
+  },
+  labelLine: {
+    show: false
+  },
+  data: [
+    { value: 48, name: '五言诗' },
+    { value: 35, name: '七言诗' },
+    { value: 16, name: '其他', selected: true }
+  ]
+},
+{
+  name: '其他',
+  type: 'pie',
+  radius: ['45%', '60%'],
+  roseType:'area',
+  labelLine: {
+    length: 30
+  },
+  label: {
+    formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+    backgroundColor: '#F6F8FC',
+    borderColor: '#8C8D8E',
+    borderWidth: 1,
+    borderRadius: 4,
+    rich: {
+      a: {
+        color: '#6E7079',
+        lineHeight: 22,
+        align: 'center'
+      },
+      hr: {
+        borderColor: '#8C8D8E',
+        width: '100%',
+        borderWidth: 1,
+        height: 0
+      },
+      b: {
+        color: '#4C5058',
+        fontSize: 14,
+        fontWeight: 'bold',
+        lineHeight: 33
+      },
+      per: {
+        color: '#fff',
+        backgroundColor: '#4C5058',
+        padding: [3, 4],
+        borderRadius: 4
+      }
+    }
+  },
+  data: [
+    { value: 3018, name: '上平声' },
+    { value: 2776, name: '下平声' },
+    { value: 1242, name: '上声' },
+    { value: 1127, name: '去声' },
+    { value: 1243, name: '入声' },
+  ]
+},
+]
+};
+  option14 = {
+    title: {
+text: '唐朝唐诗分类',
+subtext: '五言诗部分',
+left: 'center',
+
+},
+tooltip: {
+trigger: 'item',
+formatter: '{a} <br/>{b}: {c} ({d}%)'
+},
+legend: {
+show:false,
+top:'bottom',
+data: [
+  '上平声',
+  '下平声',
+  '上声',
+  '入声',
+  '去声',
+]
+},
+series: [
+{
+  name: '唐诗',
+  type: 'pie',
+  selectedMode: 'single',
+  radius: [60, '30%'],
+  label: {
+    position: 'inner',
+    fontSize: 14
+  },
+  labelLine: {
+    show: false
+  },
+  data: [
+    { value: 48, name: '五言诗',selected: true },
+    { value: 35, name: '七言诗' },
+    { value: 16, name: '其他' }
+  ]
+},
+{
+  name: '五言诗',
+  type: 'pie',
+  radius: ['45%', '60%'],
+  roseType:'area',
+  labelLine: {
+    length: 30
+  },
+  label: {
+    formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+    backgroundColor: '#F6F8FC',
+    borderColor: '#8C8D8E',
+    borderWidth: 1,
+    borderRadius: 4,
+    rich: {
+      a: {
+        color: '#6E7079',
+        lineHeight: 22,
+        align: 'center'
+      },
+      hr: {
+        borderColor: '#8C8D8E',
+        width: '100%',
+        borderWidth: 1,
+        height: 0
+      },
+      b: {
+        color: '#4C5058',
+        fontSize: 14,
+        fontWeight: 'bold',
+        lineHeight: 33
+      },
+      per: {
+        color: '#fff',
+        backgroundColor: '#4C5058',
+        padding: [3, 4],
+        borderRadius: 4
+      }
+    }
+  },
+  data: [
+    { value: 12648, name: '上平声' },
+    { value: 10987, name: '下平声' },
+    { value: 1334, name: '上声' },
+    { value: 1115, name: '去声' },
+    { value: 1612, name: '入声' },
+  ]
+},
+]
+};
+  option15 = {
+    title: {
+text: '唐朝唐诗分类',
+subtext: '七言诗部分',
+left: 'center'
+},
+tooltip: {
+trigger: 'item',
+formatter: '{a} <br/>{b}: {c} ({d}%)'
+},
+legend: {
+show:false,
+top:'bottom',
+data: [
+  '上平声',
+  '下平声',
+  '上声',
+  '入声',
+  '去声',
+]
+},
+series: [
+{
+  name: '唐诗',
+  type: 'pie',
+  selectedMode: 'single',
+  radius: [60, '30%'],
+  label: {
+    position: 'inner',
+    fontSize: 14
+  },
+  labelLine: {
+    show: false
+  },
+  data: [
+    { value: 48, name: '五言诗' },
+    { value: 35, name: '七言诗' ,selected: true},
+    { value: 16, name: '其他' }
+  ]
+},
+{
+  name: '七言诗',
+  type: 'pie',
+  radius: ['45%', '60%'],
+  roseType:'area',
+  labelLine: {
+    length: 30
+  },
+  label: {
+    formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+    backgroundColor: '#F6F8FC',
+    borderColor: '#8C8D8E',
+    borderWidth: 1,
+    borderRadius: 4,
+    rich: {
+      a: {
+        color: '#6E7079',
+        lineHeight: 22,
+        align: 'center'
+      },
+      hr: {
+        borderColor: '#8C8D8E',
+        width: '100%',
+        borderWidth: 1,
+        height: 0
+      },
+      b: {
+        color: '#4C5058',
+        fontSize: 14,
+        fontWeight: 'bold',
+        lineHeight: 33
+      },
+      per: {
+        color: '#fff',
+        backgroundColor: '#4C5058',
+        padding: [3, 4],
+        borderRadius: 4
+      }
+    }
+  },
+  data: [
+    { value: 10525, name: '上平声' },
+    { value: 8488, name: '下平声' },
+    { value: 441, name: '上声' },
+    { value: 298, name: '去声' },
+    { value: 472, name: '入声' },
+  ]
+},
+]
+};
+  myChart4.setOption(option13);
+  myChart4.on('click',function(params){
+    const idx=params.dataIndex;
+    if(idx==0){
+      myChart4.setOption(option14);
+    }
+    if(idx==1){
+      myChart4.setOption(option15);
+    }
+    if(idx==2){
+      myChart4.setOption(option13);
+    }
+  })
+</script>
+      </div>
+  </body>
+</html>

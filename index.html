@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>诗酒趁温热——唐诗分析</title>
+    <script src="js/echarts.js"></script>
+    <script src="js/tangshi.js"></script>
+    <script src="js/westeros.js"></script>
+    <script src="js/su.js"></script>
+    <script src="js/yxb.js"></script>
+    <script src="js/ds.js"></script>
+    <script type="text/javascript" src="js/echarts-wordcloud.min.js"></script>
+    <style>
+      *{
+        margin: 0 auto;
+        padding: 0;
+      }
+      #body1 p{
+        width: 1200px;
+        margin: 10px;
+        position: relative;
+        left: 400px;
+        top: -600px;
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        text-indent: 60px;
+        word-break:break-all;
+        word-wrap:break-word;
+        line-height: 180%;
+      }
+      #img1{
+        position: relative;
+        left: -800px;
+        top: -1600px;
+      }
+      #body2 img{
+        float: left;
+      }
+      #chart1{
+        position: relative;
+        top: -8200px;
+      }
+      #body2-1{
+        position: relative;
+        left:-450px;
+        top:10px;
+      }
+      #body2-0{
+        position: relative;
+        top:10px;
+      }
+      #chart2{
+        position: relative;
+        top: -7400px;
+      }
+      #img2{
+        position: relative;
+        left: 200px;
+        top: -2200px;
+      }
+      #img3{
+        float: left;
+        position: relative;
+        top: -1800px;
+        left: 10px;
+      }
+      #img4{
+        float: left;
+        position: relative;
+        top:-4800px;
+        left: -300px;;
+      }
+      #p1 p{
+        width: 800px;
+        margin: 10px;
+        position: relative;
+        left: 800px;
+        top: -2500px;
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        text-indent: 60px;
+        word-break:break-all;
+        word-wrap:break-word;
+        line-height: 180%;
+      }
+      #chart3{
+        float: left;
+        position: relative;
+        top: -7300px;
+      }
+      form{
+        font-size: 26px;
+        position: relative;
+        left: 850px;
+        top: -100px;
+      }
+      #p2 p{
+        width: 1000px;
+        margin: 10px;
+        position: relative;
+        left: 600px;
+        top: -10px;
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        text-indent: 60px;
+        word-break:break-all;
+        word-wrap:break-word;
+        line-height: 180%;
+      }
+      #p3 p{
+        float: left;
+        width: 1000px;
+        margin: 10px;
+        position: relative;
+        left: 150px;
+        top: 200px;
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        text-indent: 60px;
+        word-break:break-all;
+        word-wrap:break-word;
+        line-height: 180%;
+      }
+      #p4 p{
+        width: 1000px;
+        margin: 10px;
+        position: relative;
+        left: 150px;
+        top: 200px;
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        text-indent: 60px;
+        word-break:break-all;
+        word-wrap:break-word;
+        line-height: 180%;
+      }
+      #chart4{
+        float: left;
+        position: relative;
+        top: -7050px;
+        left: 80px;
+      }
+      #chart5{
+        float: left;
+        position: relative;
+        top: -5900px;
+        left: 10px;
+      }
+      #imgs{
+        float: right;
+        position: relative;
+        top: -1450px;
+        left: -1900px;
+      }
+      #img5{
+        float: left;
+        position: relative;
+        top: -5200px;
+        left: -300px;
+      }
+      #img6{
+        float: left;
+        position: relative;
+        top: -5000px;
+        left: 350px;
+      }
+      #chart4 p{
+        position: relative;
+        left: 1300px;
+        top: 160px;
+      }
+      #end{
+        float: left;
+        position: relative;
+        top: -5960px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main" style="width: 1680px; ">
+        <div id="top" style="height: 1180px;">
+            <img src="img/诗酒.jpg" width="1680px">
+        </div>
+        <div id="body1" style=" height: 1000px; float:left;">
+          <img src="img/诗酒倒影.png" width="1680px">
+          <p>  唐诗泛指创作于唐代的诗，也可以引申指以唐朝风格创作的诗，上承魏晋南朝诗，下开宋诗。</p>
+          <p>“九天阊阖开宫殿，万国衣冠拜冕旒。”唐代中国经济繁荣、社会安定，对外交往频繁，思想自由奔放，近体诗逐渐发展和完善，成为中国古代文学的高峰和典范。</p>
+          <p>唐诗对于后人研究唐代的政治、民情、风俗、文化等有重要的意义和价值。唐代以后，唐诗的选本、选集不断涌现，清朝的《全唐诗》整理收录了五万多首唐诗，流传最广的是蘅塘退士编选的《唐诗三百首》。</p>
+          <img id="img1" src="img/听唐诗韵如风烟.png" width="2080px">
+          <img id="img2" src="img/2.png" width="2080px">
+          <img id="img3" src="img/3.png" width="800px">
+          <div id="p1">
+            <p>中古四声，亦分前期后期。在魏晋南北朝为前期，声调只有全浊辅音的四个阴调，到了唐宋时期，声调清化(清辅音）后，又增添了四个阳调，这就是字声分阴阳的来源。其实，人们关心的是怎样才能分辨四声呢?一般来讲，平声平，上声升，去声降，入声短，即︰</p>
+            <p>平声平道莫低昂，上声高呼猛烈强。</p>
+            <p>去声分明哀远道，入声短促急收藏。</p>
+          </div>
+          <div id="p2">
+            <p id="myspan1">唐诗是是中华文化宝库中的一颗明珠，小的时候总是会看到唐诗三百首，但是唐诗非常之多，根本不止三百首，唐朝最令人瞩目的就是唐诗，而且唐朝有非常多有才华的人，诗人腾出不穷</p>
+          </div>
+          <div id="p3">
+            <p>“以自然物象完成对人的主体生命的暗示，以主体生命完成对客观化自然的审美再造，就成了审美物象得以生成的必要前提条件”。杜甫诗歌中的风雨意象能够从不同角度表现诗人的真实情感，是个人情感背景的烘托，是对社会背景的渲染和象征。诗人的忧患之情、悲伤之情往往在风雨环境的衬托下展开，是诗人民本意识和忧患意识的表达，刻画了诗人忧患的精神历程。</p>
+          </div>
+          <div id="p4"><p>在杜甫的诗歌中，风雨意象在其诗歌的前期作品中往往呈现以积极向上的姿态，表现其得意与自信之情。《夜宴左氏庄》中“林风纤月落，云露静琴张。暗水流花径，春星苇草堂”，这则诗歌描写了庄园静夜景色:上句点明夜景，下句紧承宴事，意象和谐而又形容妥帖，威风起于林间，纤纤初月已落，舒缓的语调与和谐恬静的景物相照应，潺潺细水沿着花径流淌，清冷的露珠让人感到阵阵寒意，夜深了，朋友们宴饮的兴致却不曾稍减，在悠扬的琴声中，互相赋诗助兴，反映诗人此时此景的陶醉。</p></div>
+          <script>
+            function change1(){
+              document.getElementById("myspan1").innerText="李白（701年-762年） ，字太白，号青莲居士，又号“谪仙人”，唐代伟大的浪漫主义诗人，被后人誉为“诗仙”，与杜甫合称为“大李杜”。";
+            }
+          </script>
+          <div id="imgs" style="width:500px;height:400px; overflow: hidden;">
+            <div  style="width:600px;height:400px; overflow-x:hidden";>
+              <a href="" title="李白">
+                <img src="img/poem/1李白.png" width="150px"  >
+              </a>
+              <a href="" title="杜甫"><img src="img/poem/2杜甫.png" width="150px"></a>
+              <a href="" title="白居易"><img src="img/poem/3白居易.png" width="150px"></a>
+              <a href="" title="王维"><img src="img/poem/4王维.png" width="150px"></a>
+              <a href="" title="李商隐"><img src="img/poem/5李商隐.png" width="150px"></a>
+              <a href="" title="王昌龄"><img src="img/poem/6王昌龄.png" width="150px"></a>
+              <a href="" title="孟浩然"><img src="img/poem/7孟浩然.png" width="150px"></a>
+              <a href="" title="杜牧"><img src="img/poem/8杜牧.png" width="150px"></a>
+              <a href="" title="岑参"><img src="img/poem/9岑参.png" width="150px"></a>
+              <a href="" title="李颀"><img src="img/poem/10李颀.png" width="150px"></a>
+              <a href="" title="王翰"><img src="img/poem/11王翰.png" width="150px"></a>
+              <a href="" title="李贺"><img src="img/poem/12李贺.png" width="150px"></a>
+              <a href="" title="陈子昂"><img src="img/poem/13陈子昂.png" width="150px"></a>
+              <a href="" title="李群玉"><img src="img/poem/14李群玉.png" width="150px"></a>
+              <a href="" title="韦应物"><img src="img/poem/15韦应物.png" width="150px"></a>
+              <a href="" title="柳宗元"><img src="img/poem/16柳宗元.png" width="150px"></a>
+              <a href="" title="张九龄"><img src="img/poem/17张九龄.png" width="150px"></a>
+              <a href="" title="储光羲"><img src="img/poem/18储光羲.png" width="150px"></a>
+              <a href="" title="高适"><img src="img/poem/19高适.png" width="150px"></a>
+              <a href="" title="寒山"><img src="img/poem/20寒山.png" width="150px"></a>
+              <a href="" title="卢仝"><img src="img/poem/21卢仝.png" width="150px"></a>
+              <a href="" title="李涉"><img src="img/poem/22李涉.png" width="150px"></a>
+              <a href="" title="常建"><img src="img/poem/23常建.png" width="150px"></a>
+              <a href="" title="刘慎虚"><img src="img/poem/24刘慎虚.png" width="150px"></a>
+              <a href="" title="权德舆"><img src="img/poem/25权德舆.png" width="150px"></a>
+              <a href="" title="孟郊"><img src="img/poem/26孟郊.png" width="150px"></a>
+              <a href="" title="沈佺期"><img src="img/poem/27沈佺期.png" width="150px"></a>
+              <a href="" title="贾至"><img src="img/poem/28贾至.png" width="150px"></a>
+              <a href="" title="韩愈"><img src="img/poem/29韩愈.png" width="150px"></a>
+              <a href="" title="宋之问"><img src="img/poem/30宋之问.png" width="150px"></a>
+              <a href="" title="刘长卿"><img src="img/poem/31刘长卿.png" width="150px"></a>
+              <a href="" title="钱起"><img src="img/poem/32钱起.png" width="150px"></a>
+              <a href="" title="王绩"><img src="img/poem/33王绩.png" width="150px"></a>
+              <a href="" title="贾岛"><img src="img/poem/34贾岛.png" width="150px"></a>
+            </div>
+          </div>
+          <img id="img4" src="img/4.png" width="2500px">
+          <img id="img5" src="img/5.png" width="2500px">
+          <img id="img6" src="img/6.png" width="2200px">
+        </div>
+        <div id="body2">
+          <img src="img/背景2.jpg" width="1680px">
+          <div id="chart1">
+          <div id="body2-2" style="width:1680px;height:150px; float:left" ></div>
+           <div id="body2-1" style="width: 1680px;height:800px; float:left;" ></div>
+           <div id="body2-0" style="width: 1680px;height:800px; float:left" ></div>
+           <script type="text/javascript">
+             var myChart = echarts.init(document.getElementById('body2-0'), 'tangshi');
+             var myChart1 = echarts.init(document.getElementById('body2-1'), 'tangshi');
+             var myChart2 = echarts.init(document.getElementById('body2-2'), 'tangshi');
+             var option = {
+       title: {
+        text: '五言律诗总计',
+        left:'center'
+      },
+       tooltip: {
+       trigger: 'axis',
+      axisPointer: {
+      type: 'shadow'
+    }
+  },
+     grid: {
+     left: '3%',
+     right: '4%',
+     bottom: '10%',
+     containLabel: true,
+     
+  },
+  xAxis: {
+    type: 'value',
+    boundaryGap: [0, 0.01]
+  },
+  yAxis: {
+    type: 'category',
+    data: ['首句仄起入仄韵式', '首句仄起不入平韵式', '首句仄起入平韵式', '首句平起不入仄韵式', '首句平起入仄韵式', '首句平起不入平韵式','首句平起入平韵式','首句仄起不入仄韵式','首句仄起入仄韵式']
+  },
+  series: [
+    {
+      name: '五言律诗',
+      type: 'bar',
+      data: [67, 5528, 1610, 48, 130, 3198,738,83,70]
+    },
+    
+  ]
+};
+             var option1 = {
+        title: {
+        text: '七言绝句总计',
+        left:'center'
+      },
+       tooltip: {
+       trigger: 'axis',
+      axisPointer: {
+      type: 'shadow'
+    }
+  },
+     grid: {
+     left: '3%',
+     right: '4%',
+     bottom: '3%',
+     containLabel: true,
+     selectedMode:false,
+  },
+  xAxis: {
+    type: 'value',
+    boundaryGap: [0, 0.01]
+  },
+  yAxis: {
+    type: 'category',
+    data: ['首句平起入平韵式', '首句平起不入平韵式', '首句仄起入平韵式', '首句仄起不入平韵式', '仄韵七绝二式 平起式', '仄韵七绝二式 仄起式','首句平起入平韵式','首句平起不入平韵式','首句仄起入平韵式','首句仄起不入平韵式']
+  },
+  series: [
+    {
+      name: '七言绝句',
+      type: 'bar',
+      data: [2566, 848, 3586, 706, 59, 73,2574,504,2489,354]
+    },
+  ]
+};
+             var option2 = {
+        title: {
+        text: '七言律诗总计',
+        left:'center',
+      },
+       tooltip: {
+       trigger: 'axis',
+      axisPointer: {
+      type: 'shadow'
+    }
+  },
+     grid: {
+     left: '3%',
+     right: '4%',
+     bottom: '3%',
+     containLabel: true,
+     selectedMode:false,
+  },
+  xAxis: {
+    type: 'value',
+    boundaryGap: [0, 0.01]
+  },
+  yAxis: {
+    type: 'category',
+    data: ['七律仄韵二式 平起式', '七律仄韵二式  仄起式']
+  },
+  series: [
+    {
+      name: '七言律诗',
+      type: 'bar',
+      data: [13, 4]
+    },
+  ]
+};
+             var option3 = {
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    top: '5%',
+    left: 'center'
+  },
+  series: [
+    {
+      name: '分类',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      avoidLabelOverlap: false,
+      itemStyle: {
+        borderRadius: 10,
+        borderColor: '#fff',
+        borderWidth: 2
+      },
+      label: {
+        show: false,
+        position: 'center'
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: '55',
+          fontWeight: 'bold',
+          color:'#5B7266'
+        }
+      },
+      labelLine: {
+        show: false
+      },
+      data: [
+        { value: 49, name: '五言律诗' },
+        { value: 49, name: '七言绝句' },
+        { value: 2, name: '七言律诗' },
+      ]
+    }
+  ]
+};
+      myChart.setOption(option);
+      myChart1.setOption(option3);
+      myChart1.on('click',function(params){
+        const idx=params.dataIndex;
+        if(idx==0){
+          myChart.setOption(option);
+        }
+        if(idx==1){
+          myChart.setOption(option1);
+        }
+        if(idx==2){
+          myChart.setOption(option2);
+        }
+      })
+    </script>
+          
+        </div>
+          <div id="chart2">
+            <div id="chart2-1" style="width: 1680px;height:1500px; float:right"></div>
+    <script type="text/javascript">
+      var myChart4 = echarts.init(document.getElementById('chart2-1'), 'yxb');
+      var option13;
+      var option14;
+      var option15;
+      option13 = {
+        title: {
+          show:false,
+    text: '唐朝唐诗分类',
+    subtext: '其他部分',
+    left: 'center',
+    textStyle: {
+      fontSize: 50
+    },
+    subtextStyle: {
+      fontSize: 30
+    }
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{a} <br/>{b}: {c} ({d}%)'
+  },
+  legend: {
+    show:false,
+    top:'bottom',
+    data: [
+      '上平声',
+      '下平声',
+      '上声',
+      '入声',
+      '去声',
+    ]
+  },
+  series: [
+    {
+      name: '唐诗',
+      type: 'pie',
+      selectedMode: 'single',
+      radius: [60, '30%'],
+      label: {
+        position: 'inner',
+        fontSize: 14
+      },
+      labelLine: {
+        show: false
+      },
+      itemStyle: {
+        borderRadius: 10,
+        borderColor: '#fff',
+      },
+      data: [
+        { value: 48, name: '五言诗' },
+        { value: 35, name: '七言诗' },
+        { value: 16, name: '其他', selected: true }
+      ]
+    },
+    {
+      name: '其他',
+      type: 'pie',
+      radius: ['45%', '60%'],
+      roseType:'area',
+      labelLine: {
+        length: 30
+      },
+      label: {
+        formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+        backgroundColor: '#F6F8FC',
+        borderColor: '#8C8D8E',
+        borderWidth: 1,
+        borderRadius: 4,
+        rich: {
+          a: {
+            color: '#6E7079',
+            lineHeight: 22,
+            align: 'center'
+          },
+          hr: {
+            borderColor: '#8C8D8E',
+            width: '100%',
+            borderWidth: 1,
+            height: 0
+          },
+          b: {
+            color: '#4C5058',
+            fontSize: 14,
+            fontWeight: 'bold',
+            lineHeight: 33
+          },
+          per: {
+            color: '#fff',
+            backgroundColor: '#4C5058',
+            padding: [3, 4],
+            borderRadius: 4
+          }
+        }
+      },
+      data: [
+        { value: 3018, name: '上平声' },
+        { value: 2776, name: '下平声' },
+        { value: 1242, name: '上声' },
+        { value: 1127, name: '去声' },
+        { value: 1243, name: '入声' },
+      ]
+    },
+  ]
+};
+      option14 = {
+        title: {
+    text: '唐朝唐诗分类',
+    subtext: '五言诗部分',
+    left: 'center',
+    
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{a} <br/>{b}: {c} ({d}%)'
+  },
+  legend: {
+    show:false,
+    top:'bottom',
+    data: [
+      '上平声',
+      '下平声',
+      '上声',
+      '入声',
+      '去声',
+    ]
+  },
+  series: [
+    {
+      name: '唐诗',
+      type: 'pie',
+      selectedMode: 'single',
+      radius: [60, '30%'],
+      label: {
+        position: 'inner',
+        fontSize: 14
+      },
+      itemStyle:{
+        borderRadius: 10,
+      },
+      labelLine: {
+        show: false
+      },
+      data: [
+        { value: 48, name: '五言诗',selected: true },
+        { value: 35, name: '七言诗' },
+        { value: 16, name: '其他' }
+      ]
+    },
+    {
+      name: '五言诗',
+      type: 'pie',
+      radius: ['45%', '60%'],
+      roseType:'area',
+      labelLine: {
+        length: 30
+      },
+      label: {
+        formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+        backgroundColor: '#F6F8FC',
+        borderColor: '#8C8D8E',
+        borderWidth: 1,
+        borderRadius: 4,
+        rich: {
+          a: {
+            color: '#6E7079',
+            lineHeight: 22,
+            align: 'center'
+          },
+          hr: {
+            borderColor: '#8C8D8E',
+            width: '100%',
+            borderWidth: 1,
+            height: 0
+          },
+          b: {
+            color: '#4C5058',
+            fontSize: 14,
+            fontWeight: 'bold',
+            lineHeight: 33
+          },
+          per: {
+            color: '#fff',
+            backgroundColor: '#4C5058',
+            padding: [3, 4],
+            borderRadius: 4
+          }
+        }
+      },
+      data: [
+        { value: 12648, name: '上平声' },
+        { value: 10987, name: '下平声' },
+        { value: 1334, name: '上声' },
+        { value: 1115, name: '去声' },
+        { value: 1612, name: '入声' },
+      ]
+    },
+  ]
+};
+      option15 = {
+        title: {
+    text: '唐朝唐诗分类',
+    subtext: '七言诗部分',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{a} <br/>{b}: {c} ({d}%)'
+  },
+  legend: {
+    show:false,
+    top:'bottom',
+    data: [
+      '上平声',
+      '下平声',
+      '上声',
+      '入声',
+      '去声',
+    ]
+  },
+  series: [
+    {
+      name: '唐诗',
+      type: 'pie',
+      selectedMode: 'single',
+      radius: [60, '30%'],
+      label: {
+        position: 'inner',
+        fontSize: 14
+      },
+      labelLine: {
+        show: false
+      },
+      data: [
+        { value: 48, name: '五言诗' },
+        { value: 35, name: '七言诗' ,selected: true},
+        { value: 16, name: '其他' }
+      ]
+    },
+    {
+      name: '七言诗',
+      type: 'pie',
+      radius: ['45%', '60%'],
+      roseType:'area',
+      labelLine: {
+        length: 30
+      },
+      label: {
+        formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+        backgroundColor: '#F6F8FC',
+        borderColor: '#8C8D8E',
+        borderWidth: 1,
+        borderRadius: 4,
+        rich: {
+          a: {
+            color: '#6E7079',
+            lineHeight: 22,
+            align: 'center'
+          },
+          hr: {
+            borderColor: '#8C8D8E',
+            width: '100%',
+            borderWidth: 1,
+            height: 0
+          },
+          b: {
+            color: '#4C5058',
+            fontSize: 14,
+            fontWeight: 'bold',
+            lineHeight: 33
+          },
+          per: {
+            color: '#fff',
+            backgroundColor: '#4C5058',
+            padding: [3, 4],
+            borderRadius: 4
+          }
+        }
+      },
+      data: [
+        { value: 10525, name: '上平声' },
+        { value: 8488, name: '下平声' },
+        { value: 441, name: '上声' },
+        { value: 298, name: '去声' },
+        { value: 472, name: '入声' },
+      ]
+    },
+  ]
+};
+      myChart4.setOption(option13);
+      myChart4.on('click',function(params){
+        const idx=params.dataIndex;
+        if(idx==0){
+          myChart4.setOption(option14);
+        }
+        if(idx==1){
+          myChart4.setOption(option15);
+        }
+        if(idx==2){
+          myChart4.setOption(option13);
+        }
+      })
+    </script>
+          </div>
+          <div id="chart3">
+            <div id="chart3-1" style="width: 1680px; height: 800px"></div>
+    <script>
+            var data = {
+                value0: [{
+                    "name": "王绩",
+                    "value": 128
+                },
+                    {
+                        "name": "沈佺期",
+                        "value": 182
+                    },
+                    {
+                        "name": "宋之问",
+                        "value": 130
+                    },
+                    {
+                        "name": "陈子昂",
+                        "value": 825
+                    },
+                    {
+                        "name": "张九龄",
+                        "value": 223
+                    },
+                    {
+                        "name": "王翰",
+                        "value": 19
+                    },
+                    {
+                        "name": "孟浩然",
+                        "value": 274
+                    },
+                    {
+                        "name": "李颀",
+                        "value": 133
+                    },
+                    {
+                        "name": "王昌龄",
+                        "value": 222
+                    },
+                    {
+                        "name": "寒山",
+                        "value": 314
+                    },
+                    {
+                        "name": "李白",
+                        "value": 1206
+                    },
+                    {
+                        "name": "王维",
+                        "value": 402
+                    },
+                    {
+                        "name": "高适",
+                        "value": 268
+                    },
+                    {
+                        "name": "储光羲",
+                        "value": 232
+                    },
+                    {
+                        "name": "刘长卿",
+                        "value": 529
+                    },
+                    {
+                        "name": "杜甫",
+                        "value": 1489
+                    },
+                    {
+                        "name": "刘慎虚",
+                        "value": 16
+                    },
+                    {
+                        "name": "岑参",
+                        "value": 411
+                    },
+                    {
+                        "name": "贾至",
+                        "value": 48
+                    },
+                    {
+                        "name": "钱起",
+                        "value": 541
+                    },
+                    {
+                        "name": "常建",
+                        "value": 59
+                    },
+                    {
+                        "name": "韦应物",
+                        "value": 586
+                    },
+                    {
+                        "name": "孟郊",
+                        "value": 532
+                    },
+                    {
+                        "name": "权德舆",
+                        "value": 351
+                    },
+                    {
+                        "name": "韩愈",
+                        "value": 438
+                    },
+                    {
+                        "name": "白居易",
+                        "value": 3009
+                    },
+                    {
+                        "name": "柳宗元",
+                        "value": 202
+                    },
+                    {
+                        "name": "贾岛",
+                        "value": 421
+                    },
+                    {
+                        "name": "李贺",
+                        "value": 294
+                    },
+                    {
+                        "name": "卢仝",
+                        "value": 111
+                    },
+                    {
+                        "name": "杜牧",
+                        "value": 544
+                    },
+                    {
+                        "name": "李涉",
+                        "value": 136
+                    },
+                    {
+                        "name": "李群玉",
+                        "value": 268
+                    },
+                    {
+                        "name": "李商隐",
+                        "value": 616
+                    },
+
+                ],
+                value1:[
+                  {
+                    "name": "王绩",
+                    "value": 128
+                  },
+                  {
+                        "name": "沈佺期",
+                        "value": 182
+                    },
+                    {
+                        "name": "宋之问",
+                        "value": 130
+                    },
+                    {
+                        "name": "陈子昂",
+                        "value": 825
+                    },
+                    {
+                        "name": "张九龄",
+                        "value": 223
+                    },
+                ],
+                value2:[
+                {
+                        "name": "王翰",
+                        "value": 19
+                    },
+                    {
+                        "name": "孟浩然",
+                        "value": 274
+                    },
+                    {
+                        "name": "李颀",
+                        "value": 133
+                    },
+                    {
+                        "name": "王昌龄",
+                        "value": 222
+                    },
+                    {
+                        "name": "寒山",
+                        "value": 314
+                    },
+                    {
+                        "name": "李白",
+                        "value": 1206
+                    },
+                    {
+                        "name": "王维",
+                        "value": 402
+                    },
+                    {
+                        "name": "高适",
+                        "value": 268
+                    },
+                    {
+                        "name": "储光羲",
+                        "value": 232
+                    },
+                    {
+                        "name": "刘长卿",
+                        "value": 529
+                    },
+                    {
+                        "name": "杜甫",
+                        "value": 1489
+                    },
+                    {
+                        "name": "刘慎虚",
+                        "value": 16
+                    },
+                    {
+                        "name": "岑参",
+                        "value": 411
+                    },
+                    {
+                        "name": "贾至",
+                        "value": 48
+                    },
+                    {
+                        "name": "常建",
+                        "value": 59
+                    },
+                ],
+                value3:[
+                {
+                        "name": "钱起",
+                        "value": 541
+                    },
+                    {
+                        "name": "韦应物",
+                        "value": 586
+                    },
+                    {
+                        "name": "孟郊",
+                        "value": 532
+                    },
+                    {
+                        "name": "权德舆",
+                        "value": 351
+                    },
+                    {
+                        "name": "白居易",
+                        "value": 3009
+                    },
+                    {
+                        "name": "柳宗元",
+                        "value": 202
+                    },
+                    {
+                        "name": "卢仝",
+                        "value": 111
+                    },
+                    {
+                        "name": "李涉",
+                        "value": 136
+                    },
+                ],
+                value4:[
+                {
+                        "name": "韩愈",
+                        "value": 438
+                    },
+                    {
+                        "name": "贾岛",
+                        "value": 421
+                    },
+                    {
+                        "name": "李贺",
+                        "value": 294
+                    },
+                    {
+                        "name": "杜牧",
+                        "value": 544
+                    },
+                    {
+                        "name": "李群玉",
+                        "value": 268
+                    },
+                    {
+                        "name": "李商隐",
+                        "value": 616
+                    },
+                ],
+              }
+            var myChart6 = echarts.init(document.getElementById('chart3-1'),'ds');
+                var option6={
+                    tooltip: {
+                        show:true,                       
+                    },
+                    series: [{
+                   type: 'wordCloud',
+                   sizeRange: [40, 200],
+                   rotationRange: [0, 0],
+                   rotationStep: 45,
+                   gridSize: 8,
+                   shape: 'pentagon',
+                   width: '100%',
+                   height: '100%',
+                   textStyle: {
+                       normal: {
+                           color: function () {
+                               return 'rgb(' + [
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160)
+                               ].join(',') + ')';
+                           }
+                       }
+                   },
+                   data: data.value0,
+               }]
+                }
+                var option7={
+                    tooltip: {
+                        show:true,                             
+                    },
+                    series: [{
+                   type: 'wordCloud',
+                   sizeRange: [40, 200],
+                   rotationRange: [0, 0],
+                   rotationStep: 45,
+                   gridSize: 8,
+                   shape: 'pentagon',
+                   width: '100%',
+                   height: '100%',
+                   textStyle: {
+                       normal: {
+                           color: function () {
+                               return 'rgb(' + [
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160)
+                               ].join(',') + ')';
+                           }
+                       }
+                   },
+                   data: data.value1,
+               }]
+                }
+                var option8={
+                    tooltip: {
+                        show:true,                             
+                    },
+                    series: [{
+                   type: 'wordCloud',
+                   sizeRange: [40, 200],
+                   rotationRange: [0, 0],
+                   rotationStep: 45,
+                   gridSize: 8,
+                   shape: 'pentagon',
+                   width: '100%',
+                   height: '100%',
+                   textStyle: {
+                       normal: {
+                           color: function () {
+                               return 'rgb(' + [
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160)
+                               ].join(',') + ')';
+                           }
+                       }
+                   },
+                   data: data.value2,
+               }]
+                }
+                var option9={
+                    tooltip: {
+                        show:true,                             
+                    },
+                    series: [{
+                   type: 'wordCloud',
+                   sizeRange: [40, 200],
+                   rotationRange: [0, 0],
+                   rotationStep: 45,
+                   gridSize: 8,
+                   shape: 'pentagon',
+                   width: '100%',
+                   height: '100%',
+                   textStyle: {
+                       normal: {
+                           color: function () {
+                               return 'rgb(' + [
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160)
+                               ].join(',') + ')';
+                           }
+                       }
+                   },
+                   data: data.value3,
+               }]
+                }
+                var option10={
+                    tooltip: {
+                        show:true,                             
+                    },
+                    series: [{
+                   type: 'wordCloud',
+                   sizeRange: [40, 200],
+                   rotationRange: [0, 0],
+                   rotationStep: 45,
+                   gridSize: 8,
+                   shape: 'pentagon',
+                   width: '100%',
+                   height: '100%',
+                   textStyle: {
+                       normal: {
+                           color: function () {
+                               return 'rgb(' + [
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160),
+                                   Math.round(Math.random() * 160)
+                               ].join(',') + ')';
+                           }
+                       }
+                   },
+                   data: data.value4,
+               }]
+                }
+                myChart6.setOption(option6,true);
+                function getnum(){
+                 var val="";
+                 var radio=document.getElementsByName("gender");
+                 for(var i=0;i<radio.length;i++){
+                   if(radio[i].checked==true){
+                   val=radio[i].value;
+                   break;
+                 }
+              }
+              if(val==0)
+              {
+                myChart6.setOption(option6)
+              }
+              if(val==1){
+                myChart6.setOption(option7)
+              }
+              if(val==2){
+                myChart6.setOption(option8)
+              }
+              if(val==3){
+                myChart6.setOption(option9)
+              }
+              if(val==4){
+                myChart6.setOption(option10)
+              }
+             }
+             myChart6.on('click',function(param){
+                  const idx1=param.series.data;
+                  if(idx==1){
+                    document.write("<img src='../img/poem/1李白.png' height='200px' />");
+                  }
+                }
+                )
+    </script>
+    <form >
+      <input type="radio" value="0" checked="checked" name="gender" onclick="getnum()" style="width: 24px; height: 24px; margin: 10px; vertical-align:middle;">全部
+      <input type="radio" value="1" name="gender" onclick="getnum()" style="width: 24px; height: 24px;  margin: 10px; vertical-align:middle;">初唐时期
+      <input type="radio" value="2" name="gender" onclick="getnum()" style="width: 24px; height: 24px;  margin: 10px; vertical-align:middle;">盛唐时期
+      <input type="radio" value="3" name="gender" onclick="getnum()" style="width: 24px; height: 24px;  margin: 10px; vertical-align:middle;">中唐时期
+      <input type="radio" value="4" name="gender" onclick="getnum()" style="width: 24px; height: 24px;  margin: 10px; vertical-align:middle;">晚唐时期
+    </form>
+          </div>
+          <div id="chart4">
+            <p>图 · 意象统计</p>
+            <div id="chart4-1" style="width: 1800px;height:150px;"></div>
+    <script type="text/javascript">
+      var myChart7 = echarts.init(document.getElementById('chart4-1'),'yxb');
+      option12 = {
+  tooltip: {
+    trigger: 'item',
+    axisPointer: {
+      type: 'line'
+    }
+  },
+  legend: {show:false},
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true,
+  },
+  xAxis: {
+    type: 'value',
+    show:false
+  },
+  yAxis: {
+    type: 'category',
+    data: ['意象'],
+    show:false,
+  },
+  series: [
+    {
+      name: '月',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [3137]
+    },
+    {
+      name: '酒',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [1858]
+    },
+    {
+      name: '草',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [1680]
+    },
+    {
+      name: '雪',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [1296]
+    },
+    {
+      name: '烟',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [1196]
+    },
+    {
+      name: '霜',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [931]
+    },
+    {
+      name: '柳',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [825]
+    },
+    {
+      name: '蝉',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [781]
+    },
+    {
+      name: '琴瑟',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [496]
+    },
+    {
+      name: '鸿雁',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: false
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [369]
+    },
+    
+  ]
+};
+      myChart7.setOption(option12);
+    </script>
+          </div>
+          <div id="chart5">
+            <div id="chart5-1" style="width: 2000px;height:800px;"></div>
+    <script type="text/javascript">
+      var myChart8 = echarts.init(document.getElementById('chart5-1'),'su');
+      option11 = {
+  tooltip: {
+    trigger: 'item',
+    triggerOn: 'mousemove'
+  },
+  animation: true,
+  series: [
+    {
+      type: 'sankey',
+      bottom: '10%',
+      emphasis: {
+        focus: 'adjacency',
+        blurScope:'global',
+      },
+      data: [
+        { name: '月' },
+        { name: '雪' },
+        { name: '柳' },
+        { name: '蝉' },
+        { name: '草' },
+        { name: '琴瑟' },
+        { name: '霜' },
+        { name: '酒' },
+        { name: '烟' },
+        { name: '李白' },
+        { name: '杜甫' },
+        { name: '白居易' },
+        { name: '王维' },
+        { name: '李商隐' },
+        { name: '王昌龄' },
+        { name: '孟浩然' },
+        { name: '杜牧' },
+        { name: '岑参' },
+        { name: '李颀' },
+        { name: '王翰' },
+        { name: '李贺' },
+        { name: '陈子昂' },
+        { name: '李群玉' },
+        { name: '韦应物' },
+        { name: '柳宗元' },
+        { name: '张九龄' },
+        { name: '储光羲' },
+        { name: '高适' },
+        { name: '寒山' },
+        { name: '卢仝' },
+        { name: '李涉' },
+        { name: '常建' },
+        { name: '权德舆' },
+        { name: '孟郊' },
+        { name: '沈佺期' },
+        { name: '贾至 ' },
+        { name: '韩愈' },
+        { name: '宋之问' },
+        { name: '刘长卿' },
+        { name: '钱起' },
+        { name: '王绩' },
+        { name: '贾岛' },
+      ],
+      links: [
+        { source: '李白', target: '月', value: 445 },
+        { source: '杜甫', target: '月', value: 222 },
+        { source: '王维', target: '月', value: 46 },
+        { source: '李商隐', target: '月', value: 114 },
+        { source: '王昌龄', target: '月', value: 80 },
+        { source: '孟浩然', target: '月', value: 41 },
+        { source: '杜牧', target: '月', value: 123 },
+        { source: '岑参', target: '月', value: 130 },
+        { source: '李颀', target: '月', value: 21 },
+        { source: '王翰', target: '月', value: 4 },
+        { source: '李贺', target: '月', value: 81 },
+        { source: '陈子昂', target: '月', value: 29 },
+        { source: '李群玉', target: '月', value: 64 },
+        { source: '韦应物', target: '月', value: 92 },
+        { source: '柳宗元', target: '月', value: 17 },
+        { source: '张九龄', target: '月', value: 39 },
+        { source: '月', target: '储光羲', value: 46 },
+        { source: '月', target: '高适', value: 50 },
+        { source: '月', target: '寒山', value: 34 },
+        { source: '月', target: '卢仝', value: 27 },
+        { source: '月', target: '李涉', value: 29 },
+        { source: '月', target: '白居易', value: 635 },
+        { source: '月', target: '常建', value: 22 },
+        { source: '月', target: '权德舆', value: 74 },
+        { source: '月', target: '孟郊', value: 123 },
+        { source: '月', target: '沈佺期', value: 49 },
+        { source: '月', target: '贾至', value: 9 },
+        { source: '月', target: '韩愈', value: 83 },
+        { source: '月', target: '宋之问', value: 40 },
+        { source: '月', target: '刘长卿', value: 94 },
+        { source: '月', target: '钱起', value: 132 },
+        { source: '月', target: '王绩', value: 22 },
+        { source: '月', target: '贾岛', value: 120 },
+        { source: '李白', target: '雪', value: 169 },
+        { source: '杜甫', target: '雪', value: 156 },
+        { source: '王维', target: '雪', value: 14 },
+        { source: '李商隐', target: '雪', value: 60 },
+        { source: '王昌龄', target: '雪', value: 13 },
+        { source: '孟浩然', target: '雪', value: 17 },
+        { source: '杜牧', target: '雪', value: 47 },
+        { source: '岑参', target: '雪', value: 37 },
+        { source: '李颀', target: '雪', value: 21 },
+        { source: '王翰', target: '雪', value: 1 },
+        { source: '李贺', target: '雪', value: 11 },
+        { source: '陈子昂', target: '雪', value: 5 },
+        { source: '李群玉', target: '雪', value: 25 },
+        { source: '韦应物', target: '雪', value: 54 },
+        { source: '柳宗元', target: '雪', value: 9 },
+        { source: '张九龄', target: '雪', value: 8 },
+        { source: '雪', target: '储光羲', value: 25 },
+        { source: '雪', target: '高适', value: 25 },
+        { source: '雪', target: '寒山', value: 6 },
+        { source: '雪', target: '卢仝', value: 12 },
+        { source: '雪', target: '李涉', value: 7 },
+        { source: '雪', target: '白居易', value: 295 },
+        { source: '雪', target: '常建', value: 1 },
+        { source: '雪', target: '权德舆', value: 22 },
+        { source: '雪', target: '孟郊', value: 48 },
+        { source: '雪', target: '沈佺期', value: 8 },
+        { source: '雪', target: '贾至', value: 3  },
+        { source: '雪', target: '韩愈', value: 45 },
+        { source: '雪', target: '宋之问', value: 8 },
+        { source: '雪', target: '刘长卿', value: 38 },
+        { source: '雪', target: '钱起', value: 40 },
+        { source: '雪', target: '王绩', value: 7 },
+        { source: '雪', target: '贾岛', value: 59 },
+        { source: '李白', target: '柳', value: 44 },
+        { source: '杜甫', target: '柳', value: 64 },
+        { source: '王维', target: '柳', value: 43 },
+        { source: '李商隐', target: '柳', value: 49 },
+        { source: '王昌龄', target: '柳', value: 4 },
+        { source: '孟浩然', target: '柳', value: 20 },
+        { source: '杜牧', target: '柳', value: 42 },
+        { source: '岑参', target: '柳', value: 36 },
+        { source: '李颀', target: '柳', value: 15 },
+        { source: '王翰', target: '柳', value: 4 },
+        { source: '李贺', target: '柳', value: 38 },
+        { source: '陈子昂', target: '柳', value: 2 },
+        { source: '李群玉', target: '柳', value: 10 },
+        { source: '韦应物', target: '柳', value: 23 },
+        { source: '柳宗元', target: '柳', value: 10 },
+        { source: '张九龄', target: '柳', value: 6},
+        { source: '柳', target: '储光羲', value: 16 },
+        { source: '柳', target: '高适', value: 18 },
+        { source: '柳', target: '寒山', value: 4 },
+        { source: '柳', target: '卢仝', value: 5 },
+        { source: '柳', target: '李涉', value: 4 },
+        { source: '柳', target: '白居易', value: 168 },
+        { source: '柳', target: '常建', value: 1 },
+        { source: '柳', target: '权德舆', value: 17 },
+        { source: '柳', target: '孟郊', value: 26 },
+        { source: '柳', target: '沈佺期', value: 12 },
+        { source: '柳', target: '贾至', value: 8 },
+        { source: '柳', target: '韩愈', value: 22 },
+        { source: '柳', target: '宋之问', value: 21 },
+        { source: '柳', target: '刘长卿', value: 40 },
+        { source: '柳', target: '钱起', value: 27 },
+        { source: '柳', target: '王绩', value: 10 },
+        { source: '柳', target: '贾岛', value: 16 },
+        { source: '李白', target: '蝉', value: 0 },
+        { source: '杜甫', target: '蝉', value: 64 },
+        { source: '王维', target: '蝉', value: 43 },
+        { source: '李商隐', target: '蝉', value: 49 },
+        { source: '王昌龄', target: '蝉', value: 4 },
+        { source: '孟浩然', target: '蝉', value: 20 },
+        { source: '杜牧', target: '蝉', value: 42 },
+        { source: '岑参', target: '蝉', value: 36 },
+        { source: '李颀', target: '蝉', value: 15 },
+        { source: '王翰', target: '蝉', value: 4 },
+        { source: '李贺', target: '蝉', value: 38 },
+        { source: '陈子昂', target: '蝉', value: 2 },
+        { source: '李群玉', target: '蝉', value: 10 },
+        { source: '韦应物', target: '蝉', value: 23 },
+        { source: '柳宗元', target: '蝉', value: 10 },
+        { source: '张九龄', target: '蝉', value: 6},
+        { source: '蝉', target: '储光羲', value: 16 },
+        { source: '蝉', target: '高适', value: 18 },
+        { source: '蝉', target: '寒山', value: 4 },
+        { source: '蝉', target: '卢仝', value: 5 },
+        { source: '蝉', target: '李涉', value: 4 },
+        { source: '蝉', target: '白居易', value: 168 },
+        { source: '蝉', target: '常建', value: 1 },
+        { source: '蝉', target: '权德舆', value: 17 },
+        { source: '蝉', target: '孟郊', value: 26 },
+        { source: '蝉', target: '沈佺期', value: 12 },
+        { source: '蝉', target: '贾至', value: 8 },
+        { source: '蝉', target: '韩愈', value: 22 },
+        { source: '蝉', target: '宋之问', value: 21 },
+        { source: '蝉', target: '刘长卿', value: 40 },
+        { source: '蝉', target: '钱起', value: 27 },
+        { source: '蝉', target: '王绩', value: 10 },
+        { source: '蝉', target: '贾岛', value: 16 },
+        { source: '李白', target: '草', value: 189 },
+        { source: '杜甫', target: '草', value: 171 },
+        { source: '王维', target: '草', value: 56 },
+        { source: '李商隐', target: '草', value: 40 },
+        { source: '王昌龄', target: '草', value: 27 },
+        { source: '孟浩然', target: '草', value: 24 },
+        { source: '杜牧', target: '草', value: 61 },
+        { source: '岑参', target: '草', value: 87 },
+        { source: '李颀', target: '草', value: 29 },
+        { source: '王翰', target: '草', value: 0},
+        { source: '李贺', target: '草', value: 44 },
+        { source: '陈子昂', target: '草', value: 3 },
+        { source: '李群玉', target: '草', value: 30 },
+        { source: '韦应物', target: '草', value: 85 },
+        { source: '柳宗元', target: '草', value: 12 },
+        { source: '张九龄', target: '草', value: 29},
+        { source: '草', target: '储光羲', value: 27 },
+        { source: '草', target: '高适', value: 26 },
+        { source: '草', target: '寒山', value: 22 },
+        { source: '草', target: '卢仝', value: 10},
+        { source: '草', target: '李涉', value: 15 },
+        { source: '草', target: '白居易', value: 256 },
+        { source: '草', target: '常建', value: 5 },
+        { source: '草', target: '权德舆', value: 27 },
+        { source: '草', target: '孟郊', value: 58 },
+        { source: '草', target: '沈佺期', value: 10 },
+        { source: '草', target: '贾至', value: 10 },
+        { source: '草', target: '韩愈', value: 39 },
+        { source: '草', target: '宋之问', value: 23 },
+        { source: '草', target: '刘长卿', value: 149 },
+        { source: '草', target: '钱起', value: 56 },
+        { source: '草', target: '王绩', value: 10 },
+        { source: '草', target: '贾岛', value: 50 },
+        { source: '李白', target: '琴瑟', value: 58 },
+        { source: '杜甫', target: '琴瑟', value: 26 },
+        { source: '王维', target: '琴瑟', value: 7 },
+        { source: '李商隐', target: '琴瑟', value: 18 },
+        { source: '王昌龄', target: '琴瑟', value: 7 },
+        { source: '孟浩然', target: '琴瑟', value: 17 },
+        { source: '杜牧', target: '琴瑟', value: 9 },
+        { source: '岑参', target: '琴瑟', value: 9 },
+        { source: '李颀', target: '琴瑟', value: 4 },
+        { source: '王翰', target: '琴瑟', value: 0},
+        { source: '李贺', target: '琴瑟', value: 9 },
+        { source: '陈子昂', target: '琴瑟', value: 9 },
+        { source: '李群玉', target: '琴瑟', value: 21 },
+        { source: '韦应物', target: '琴瑟', value: 10 },
+        { source: '柳宗元', target: '琴瑟', value: 1 },
+        { source: '张九龄', target: '琴瑟', value: 7},
+        { source: '琴瑟', target: '储光羲', value: 5 },
+        { source: '琴瑟', target: '高适', value: 10 },
+        { source: '琴瑟', target: '寒山', value: 3 },
+        { source: '琴瑟', target: '卢仝', value: 11},
+        { source: '琴瑟', target: '李涉', value: 1 },
+        { source: '琴瑟', target: '白居易', value: 131 },
+        { source: '琴瑟', target: '常建', value: 7 },
+        { source: '琴瑟', target: '权德舆', value: 17 },
+        { source: '琴瑟', target: '孟郊', value: 20 },
+        { source: '琴瑟', target: '沈佺期', value: 4 },
+        { source: '琴瑟', target: '贾至', value: 1 },
+        { source: '琴瑟', target: '韩愈', value: 5 },
+        { source: '琴瑟', target: '宋之问', value: 14 },
+        { source: '琴瑟', target: '刘长卿', value: 13 },
+        { source: '琴瑟', target: '钱起', value: 12 },
+        { source: '琴瑟', target: '王绩', value: 14 },
+        { source: '琴瑟', target: '贾岛', value: 16 },
+        { source: '李白', target: '鸿雁', value: 31 },
+        { source: '杜甫', target: '鸿雁', value: 53 },
+        { source: '王维', target: '鸿雁', value: 7 },
+        { source: '李商隐', target: '鸿雁', value: 31 },
+        { source: '王昌龄', target: '鸿雁', value: 7 },
+        { source: '孟浩然', target: '鸿雁', value: 11 },
+        { source: '杜牧', target: '鸿雁', value: 7 },
+        { source: '岑参', target: '鸿雁', value: 9 },
+        { source: '李颀', target: '鸿雁', value: 2 },
+        { source: '王翰', target: '鸿雁', value: 0},
+        { source: '李贺', target: '鸿雁', value: 9 },
+        { source: '陈子昂', target: '鸿雁', value: 3 },
+        { source: '李群玉', target: '鸿雁', value: 7 },
+        { source: '韦应物', target: '鸿雁', value: 7 },
+        { source: '柳宗元', target: '鸿雁', value: 7 },
+        { source: '张九龄', target: '鸿雁', value: 5},
+        { source: '鸿雁', target: '储光羲', value: 10 },
+        { source: '鸿雁', target: '高适', value: 22 },
+        { source: '鸿雁', target: '寒山', value: 0 },
+        { source: '鸿雁', target: '卢仝', value: 1},
+        { source: '鸿雁', target: '李涉', value: 0 },
+        { source: '鸿雁', target: '白居易', value: 52 },
+        { source: '鸿雁', target: '常建', value: 0 },
+        { source: '鸿雁', target: '权德舆', value: 0 },
+        { source: '鸿雁', target: '孟郊', value: 2 },
+        { source: '鸿雁', target: '沈佺期', value: 14 },
+        { source: '鸿雁', target: '贾至', value: 0 },
+        { source: '鸿雁', target: '韩愈', value: 8 },
+        { source: '鸿雁', target: '宋之问', value: 20 },
+        { source: '鸿雁', target: '刘长卿', value: 17 },
+        { source: '鸿雁', target: '钱起', value: 17 },
+        { source: '鸿雁', target: '王绩', value: 4 },
+        { source: '鸿雁', target: '贾岛', value: 6 },
+        { source: '李白', target: '霜', value: 142 },
+        { source: '杜甫', target: '霜', value: 101 },
+        { source: '王维', target: '霜', value: 5 },
+        { source: '李商隐', target: '霜', value: 38 },
+        { source: '王昌龄', target: '霜', value: 17 },
+        { source: '孟浩然', target: '霜', value: 9 },
+        { source: '杜牧', target: '霜', value: 35},
+        { source: '岑参', target: '霜', value: 29 },
+        { source: '李颀', target: '霜', value: 13 },
+        { source: '王翰', target: '霜', value: 0},
+        { source: '李贺', target: '霜', value: 25 },
+        { source: '陈子昂', target: '霜', value: 4 },
+        { source: '李群玉', target: '霜', value: 14 },
+        { source: '韦应物', target: '霜', value: 43 },
+        { source: '柳宗元', target: '霜', value: 16 },
+        { source: '张九龄', target: '霜', value: 11},
+        { source: '霜', target: '储光羲', value: 12 },
+        { source: '霜', target: '高适', value: 10 },
+        { source: '霜', target: '寒山', value: 7 },
+        { source: '霜', target: '卢仝', value: 9},
+        { source: '霜', target: '李涉', value: 2 },
+        { source: '霜', target: '白居易', value: 165 },
+        { source: '霜', target: '常建', value: 3 },
+        { source: '霜', target: '权德舆', value: 23 },
+        { source: '霜', target: '孟郊', value: 53 },
+        { source: '霜', target: '沈佺期', value: 11 },
+        { source: '霜', target: '贾至', value: 2 },
+        { source: '霜', target: '韩愈', value: 33 },
+        { source: '霜', target: '宋之问', value: 12 },
+        { source: '霜', target: '刘长卿', value: 21 },
+        { source: '霜', target: '钱起', value: 27 },
+        { source: '霜', target: '王绩', value: 8 },
+        { source: '霜', target: '贾岛', value: 31 },
+        { source: '李白', target: '酒', value: 196 },
+        { source: '杜甫', target: '酒', value: 174 },
+        { source: '王维', target: '酒', value: 40 },
+        { source: '李商隐', target: '酒', value: 59 },
+        { source: '王昌龄', target: '酒', value: 15 },
+        { source: '孟浩然', target: '酒', value: 24 },
+        { source: '杜牧', target: '酒', value: 72},
+        { source: '岑参', target: '酒', value: 98 },
+        { source: '李颀', target: '酒', value: 28 },
+        { source: '王翰', target: '酒', value: 3},
+        { source: '李贺', target: '酒', value: 57 },
+        { source: '陈子昂', target: '酒', value: 5 },
+        { source: '李群玉', target: '酒', value: 34 },
+        { source: '韦应物', target: '酒', value: 49 },
+        { source: '柳宗元', target: '酒', value: 8 },
+        { source: '张九龄', target: '酒', value: 9},
+        { source: '酒', target: '储光羲', value: 7 },
+        { source: '酒', target: '高适', value: 48 },
+        { source: '酒', target: '寒山', value: 9 },
+        { source: '酒', target: '卢仝', value: 15},
+        { source: '酒', target: '李涉', value: 6 },
+        { source: '酒', target: '白居易', value: 617 },
+        { source: '酒', target: '常建', value: 0 },
+        { source: '酒', target: '权德舆', value: 35 },
+        { source: '酒', target: '孟郊', value: 29 },
+        { source: '酒', target: '沈佺期', value: 6 },
+        { source: '酒', target: '贾至', value: 7 },
+        { source: '酒', target: '韩愈', value: 62 },
+        { source: '酒', target: '宋之问', value: 17 },
+        { source: '酒', target: '刘长卿', value: 24 },
+        { source: '酒', target: '钱起', value: 59 },
+        { source: '酒', target: '王绩', value: 31 },
+        { source: '酒', target: '贾岛', value: 15 },
+        { source: '李白', target: '烟', value: 94 },
+        { source: '杜甫', target: '烟', value: 93 },
+        { source: '王维', target: '烟', value: 28 },
+        { source: '李商隐', target: '烟', value: 57 },
+        { source: '王昌龄', target: '烟', value: 12 },
+        { source: '孟浩然', target: '烟', value: 23 },
+        { source: '杜牧', target: '烟', value: 60},
+        { source: '岑参', target: '烟', value: 32 },
+        { source: '李颀', target: '烟', value: 1 },
+        { source: '王翰', target: '烟', value: 2},
+        { source: '李贺', target: '烟', value: 54 },
+        { source: '陈子昂', target: '烟', value: 16 },
+        { source: '李群玉', target: '烟', value: 49 },
+        { source: '韦应物', target: '烟', value: 54 },
+        { source: '柳宗元', target: '烟', value: 15 },
+        { source: '张九龄', target: '烟', value: 26},
+        { source: '烟', target: '储光羲', value: 9 },
+        { source: '烟', target: '高适', value: 6 },
+        { source: '烟', target: '寒山', value: 14 },
+        { source: '烟', target: '卢仝', value: 4},
+        { source: '烟', target: '李涉', value: 20 },
+        { source: '烟', target: '白居易', value: 215 },
+        { source: '烟', target: '常建', value: 5 },
+        { source: '烟', target: '权德舆', value: 61 },
+        { source: '烟', target: '孟郊', value: 23 },
+        { source: '烟', target: '沈佺期', value: 15 },
+        { source: '烟', target: '贾至', value: 1 },
+        { source: '烟', target: '韩愈', value: 16 },
+        { source: '烟', target: '宋之问', value: 17 },
+        { source: '烟', target: '刘长卿', value: 70 },
+        { source: '烟', target: '钱起', value: 58 },
+        { source: '烟', target: '王绩', value: 15 },
+        { source: '烟', target: '贾岛', value: 31 },
+      ],
+      orient: 'vertical',
+      nodeWidth:30,
+      nodeGap:40,
+      label: {
+        color:'rgba(0,0,0,0.7)',
+        fontFamily:'Arial',
+        fontSize:20,
+        position: 'top'
+      },
+      itemStyle:{
+        borderCap:'round',
+        borderJoin:'round',
+      },
+      lineStyle: {
+        color: 'source',
+        curveness: 0.8,
+        opacity:0.2,
+      }
+    }
+  ]
+};
+      myChart8.setOption(option11);
+    </script>
+          </div>
+        </div>
+        <div id="end">
+          <img src="img/7.jpg" width="1680px">
+        </div>
+    </div>
+  </body>
+</html>
